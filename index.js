@@ -35,10 +35,10 @@ app.post('/payments/create', async (request, response) => {
 });
 
 // Listen command
-exports.api = functions.https.onRequest(app)
+// exports.api = functions.https.onRequest(app)
 
-// const port=5001
-// app.listen(port, () => console.log('listening to ',port));
+const port=5001
+app.listen(port, () => console.log('listening to ',port));
 
 
 
